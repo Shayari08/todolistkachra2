@@ -62,15 +62,21 @@ h1 {
   color: #577B8D; /* Change text color to #577B8D */
   box-sizing: border-box; /* Ensure padding does not affect the width */
 }
-.task-item .move-button {
-  display: none; /* Hide the button by default */
-}
+/*.task-item .move-button {
+  display: none; }/* Hide the button by default */
+
 
 .task-item:hover .move-button {
   display: inline-block; /* Show the button on hover */
 }
-.task:hover .move-button {
+.task-item:hover .edit-button {
+  display: inline-block; /* Show the edit button on hover */
+}
+/*.task:hover .move-button {
   display: inline;
+}*/
+.task-item .move-button, .task-item .edit-button {
+  display: none; /* Hide buttons by default */
 }
 button {
   border-radius: 5px; /* Add rounded corners */
